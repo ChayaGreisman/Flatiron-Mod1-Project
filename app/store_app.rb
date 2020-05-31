@@ -166,7 +166,6 @@ class StoreApp
 
         category_choice = TTY::Prompt.new.select("Please assign it to a category below:", y)
 
-
         category_to_assign = Category.all.find do |category|
                                 category.name == category_choice
                                 end
